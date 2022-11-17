@@ -35,9 +35,17 @@ body {
   justify-content: center;
   align-items: center; }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #4c545d;
+  margin-bottom: 1rem; }
+
 .heading-primary {
   margin: 2rem;
-  color: #4c545d;
   width: min-content;
   font-size: 4rem; }
   .heading-primary-main {
@@ -48,6 +56,12 @@ body {
     display: block;
     color: #9fabb2;
     text-align: center; }
+
+.heading-secondary {
+  font-size: 3.5rem; }
+
+.heading-tertiary {
+  font-size: 2rem; }
 
 .heading-cta {
   width: 100%;
@@ -68,3 +82,26 @@ body {
   .btn-green {
     background-color: #26baa4;
     box-shadow: 0 2px 1px #179784, 0 10px 20px rgba(38, 186, 164, 0.4); }
+
+.section-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem; }
+
+.feature-header {
+  grid-column: 1/-1;
+  padding: 2rem 25%;
+  text-align: center; }
+
+.feature-image img {
+  position: relative;
+  left: -4%; }
+
+.features-container {
+  padding: 0 35%;
+  padding-left: 5%; }
+
+.feature {
+  margin: 10% 0; }
+  .feature-description {
+    font-size: 1.5rem; }

@@ -26,6 +26,8 @@ body {
   color: $grayish-blue;
 }
 
+//Hero Section
+
 .logo {
   width: 12rem;
   height: 12rem;
@@ -47,9 +49,18 @@ body {
   align-items: center;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $dark-grayish-blue;
+  margin-bottom: 1rem;
+}
+
 .heading-primary {
   margin: 2rem;
-  color: $dark-grayish-blue;
   width: min-content;
   font-size: 4rem;
   &-main {
@@ -62,6 +73,14 @@ body {
     color: $grayish-blue;
     text-align: center;
   }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
 }
 
 .heading-cta {
@@ -89,5 +108,38 @@ body {
     background-color: $strong-cyan;
     box-shadow: 0 2px 1px hsl(171, 74%, 34%),
       0 10px 20px hsla(171, 66%, 44%, 0.4);
+  }
+}
+
+//Features Section
+
+.section-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem;
+}
+
+.feature-header {
+  grid-column: 1/-1;
+  padding: 2rem 25%;
+  text-align: center;
+}
+
+.feature-image {
+  & img {
+    position: relative;
+    left: -4%;
+  }
+}
+
+.features-container {
+  padding: 0 35%;
+  padding-left: 5%;
+}
+
+.feature {
+  margin: 10% 0;
+  &-description {
+    font-size: 1.5rem;
   }
 }
