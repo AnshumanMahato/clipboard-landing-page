@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?pa9g52');
-  src:  url('fonts/icomoon.eot?pa9g52#iefix') format('embedded-opentype'),
+  src: url('fonts/icomoon.eot?pa9g52');
+  src: url('fonts/icomoon.eot?pa9g52#iefix') format('embedded-opentype'),
     url('fonts/icomoon.ttf?pa9g52') format('truetype'),
     url('fonts/icomoon.woff?pa9g52') format('woff'),
     url('fonts/icomoon.svg?pa9g52#icomoon') format('svg');
@@ -10,7 +10,8 @@
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -29,23 +30,28 @@
   content: "\e900";
   color: #9eabb2;
 }
+
 .icon-icon-facebook:before {
   content: "\e901";
-  color: #4c545c;
+  color: inherit;
 }
+
 .icon-icon-instagram:before {
   content: "\e902";
-  color: #4c545c;
+  color: inherit;
 }
+
 .icon-icon-preview:before {
   content: "\e903";
   color: #9eabb2;
 }
+
 .icon-icon-text:before {
   content: "\e904";
   color: #9eabb2;
 }
+
 .icon-icon-twitter:before {
   content: "\e905";
-  color: #4c545c;
+  color: inherit;
 }

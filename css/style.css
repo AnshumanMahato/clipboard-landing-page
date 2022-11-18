@@ -64,11 +64,13 @@ h6 {
   font-size: 2.2rem;
   margin-bottom: 0; }
 
-.heading-cta {
+.cta {
   width: 100%;
   margin: 2rem 0; }
 
-.btn {
+.btn,
+.btn:link,
+.btn:visited {
   text-align: center;
   text-decoration: none;
   color: #eee;
@@ -77,12 +79,20 @@ h6 {
   border-radius: 100px;
   font-weight: 600;
   margin: 0 0.5rem; }
-  .btn-blue {
-    background-color: #6173ff;
-    box-shadow: 0 2px 1px #3244cd, 0 10px 20px rgba(97, 115, 255, 0.399); }
-  .btn-green {
-    background-color: #26baa4;
-    box-shadow: 0 2px 1px #179784, 0 10px 20px rgba(38, 186, 164, 0.4); }
+
+.btn-blue {
+  background-color: #6173ff;
+  box-shadow: 0 2px 1px #3244cd, 0 10px 20px rgba(97, 115, 255, 0.399); }
+  .btn-blue:active, .btn-blue:hover {
+    background-color: #8f9cff;
+    box-shadow: 0 2px 1px #7580d7, 0 10px 20px rgba(97, 115, 255, 0.399); }
+
+.btn-green {
+  background-color: #26baa4;
+  box-shadow: 0 2px 1px #179784, 0 10px 20px rgba(38, 186, 164, 0.4); }
+  .btn-green:hover, .btn-green:active {
+    background-color: #48d5c0;
+    box-shadow: 0 2px 1px #27b9a3, 0 10px 20px rgba(38, 186, 164, 0.4); }
 
 .section-features {
   display: grid;
@@ -110,7 +120,7 @@ h6 {
 
 .section-display {
   text-align: center;
-  margin: 5rem 0; }
+  margin: 2.5rem 0; }
 
 .display-header {
   padding: 2% 25%;
@@ -118,7 +128,7 @@ h6 {
 
 .section-toolset {
   text-align: center;
-  margin: 5rem 0; }
+  margin: 2.5rem 0; }
 
 .toolset-header {
   padding: 2% 25%; }
@@ -140,3 +150,54 @@ h6 {
     margin-bottom: 1rem; }
   .card-description {
     font-size: 1.5rem; }
+
+.section-branding {
+  text-align: center;
+  margin: 2.5rem 0;
+  padding: 5% 0; }
+
+.brand-container {
+  display: flex;
+  padding: 2% 12%;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; }
+
+.section-cta {
+  text-align: center;
+  margin: 2.5rem 0;
+  padding: 2% 0 10%; }
+
+.cta-header {
+  padding: 2% 25%; }
+
+.footer {
+  background-color: #f5f5f5;
+  display: flex;
+  padding: 3% 12%;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%; }
+  .footer a:link,
+  .footer a:visited {
+    color: #4c545d;
+    text-decoration: none; }
+  .footer a:hover,
+  .footer a:active {
+    color: #26baa4; }
+  .footer-nav {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-right: auto; }
+  .footer-link {
+    width: 30%; }
+  .footer-logo {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 15rem; }
+    .footer-logo img {
+      width: 100%; }
+  .footer .social-link {
+    margin: 0 1rem; }
