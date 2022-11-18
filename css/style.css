@@ -25,7 +25,7 @@ body {
     width: 100%; }
 
 .header {
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
   padding: 5% 2%;
   background-image: url("../images/bg-header-desktop.png");
@@ -88,7 +88,7 @@ h6 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 5rem;
-  margin: 5rem 0; }
+  margin: 5rem 0 10rem; }
 
 .feature-header {
   grid-column: 1/-1;
@@ -106,4 +106,37 @@ h6 {
 .feature {
   margin: 15% 0; }
   .feature-description {
+    font-size: 1.5rem; }
+
+.section-display {
+  text-align: center;
+  margin: 5rem 0; }
+
+.display-header {
+  padding: 2% 25%;
+  margin-bottom: 5rem; }
+
+.section-toolset {
+  text-align: center;
+  margin: 5rem 0; }
+
+.toolset-header {
+  padding: 2% 25%; }
+
+.cards {
+  display: flex;
+  padding: 2% 12%;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%; }
+
+.card {
+  width: 30%; }
+  .card-icon {
+    display: inline-block;
+    font-size: 4rem;
+    padding: 2rem 0 5rem; }
+  .card-title {
+    margin-bottom: 1rem; }
+  .card-description {
     font-size: 1.5rem; }
