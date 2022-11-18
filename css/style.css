@@ -61,7 +61,8 @@ h6 {
   font-size: 3.5rem; }
 
 .heading-tertiary {
-  font-size: 2rem; }
+  font-size: 2.5rem;
+  margin-bottom: 0; }
 
 .heading-cta {
   width: 100%;
@@ -86,7 +87,8 @@ h6 {
 .section-features {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 5rem; }
+  grid-gap: 5rem;
+  margin: 5rem 0; }
 
 .feature-header {
   grid-column: 1/-1;
@@ -98,10 +100,10 @@ h6 {
   left: -4%; }
 
 .features-container {
-  padding: 0 35%;
-  padding-left: 5%; }
+  padding: 5% 40%;
+  padding-left: 10%; }
 
 .feature {
-  margin: 10% 0; }
+  margin: 15% 0; }
   .feature-description {
     font-size: 1.5rem; }
