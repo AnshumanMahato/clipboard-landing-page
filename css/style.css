@@ -48,6 +48,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 600px) {
+    .header {
+      background-image: url("../images/bg-header-mobile.png"); } }
 
 h1,
 h2,
@@ -109,7 +112,7 @@ h6 {
     .btn:link,
     .btn:visited {
       width: 85%;
-      padding: 5%;
+      padding: 4%;
       margin: 1.5rem;
       font-size: 2rem; } }
 
