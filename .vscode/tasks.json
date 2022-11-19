@@ -8,6 +8,14 @@
 			"problemMatcher": [],
 			"label": "npm: compile:sass",
 			"detail": "node-sass ./scss/main.scss css/style.css"
+		},
+		{
+			"type": "npm",
+			"script": "watch:sass",
+			"group": "test",
+			"problemMatcher": [],
+			"label": "npm: watch:sass",
+			"detail": "node-sass ./scss/main.scss css/style.css -w"
 		}
 	]
 }
