@@ -1,0 +1,306 @@
+.section-header {
+    padding: 2% 25%;
+
+    @media only screen and (max-width:1024px) {
+        padding: 2rem 20%;
+    }
+
+    @media only screen and (max-width:600px) {
+        padding: 2rem 10%;
+    }
+}
+
+//Hero Section
+
+.logo {
+    width: 12rem;
+    height: 12rem;
+
+    & img {
+        width: 100%;
+    }
+
+    margin: 4rem 0 2rem;
+}
+
+.header {
+    min-height: 100vh;
+    text-align: center;
+    padding: 5% 2%;
+    background-image: url("../images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width:600px) {
+        background-image: url("../images/bg-header-mobile.png");
+    }
+}
+
+.cta {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+//Features Section
+
+.section-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+    margin: 5rem 0 10rem;
+
+    @media only screen and (max-width:600px) {
+        grid-template-columns: 1fr;
+        margin: 5rem 0;
+        text-align: center;
+    }
+}
+
+.feature-header {
+    grid-column: 1/-1;
+    padding: 2rem 25%;
+    text-align: center;
+
+    @media only screen and (max-width:1024px) {
+        padding: 2rem 20%;
+    }
+
+    @media only screen and (max-width:600px) {
+        padding: 2rem 10%;
+    }
+}
+
+.feature-image {
+    width: 100%;
+
+    & img {
+        position: relative;
+        left: -4%;
+
+        @media only screen and (max-width:1200px) {
+            width: 100%;
+        }
+
+        @media only screen and (max-width:600px) {
+            left: 0;
+            width: 80%;
+        }
+    }
+}
+
+.features-container {
+    padding: 5% 40%;
+    padding-left: 5%;
+
+    @media only screen and (max-width:1200px) {
+        padding: 2%;
+        padding-right: 30%;
+    }
+
+    @media only screen and (max-width:800px) {
+        padding: 2%;
+        padding-right: 15%;
+    }
+
+    @media only screen and (max-width:600px) {
+        padding: 2% 10%;
+    }
+}
+
+.feature {
+    margin: 15% 0;
+
+    &-description {
+        font-size: 1.5rem;
+    }
+
+    @media only screen and (max-width:1200px) {
+        margin: 0;
+        margin-bottom: 10%;
+    }
+}
+
+//Display Section
+
+.section-display {
+    text-align: center;
+    margin: 2.5rem 0;
+}
+
+.display-header {
+    padding: 2% 25%;
+    margin-bottom: 5rem;
+
+    @media only screen and (max-width:1024px) {
+        padding: 2rem 20%;
+    }
+
+    @media only screen and (max-width:600px) {
+        padding: 2rem 10%;
+    }
+}
+
+.display-image {
+    width: 100%;
+
+    & img {
+        @media only screen and (max-width:1024px) {
+            width: 80%;
+        }
+    }
+}
+
+//Toolset Section
+
+.section-toolset {
+    text-align: center;
+    margin: 2.5rem 0;
+}
+
+.toolset-header {
+    padding: 2% 25%;
+
+    @media only screen and (max-width:1024px) {
+        padding: 2rem 20%;
+    }
+
+    @media only screen and (max-width:600px) {
+        padding: 2rem 10%;
+    }
+}
+
+//Branding
+
+.section-branding {
+    text-align: center;
+    margin: 2.5rem 0;
+    padding: 5% 0;
+
+    @media only screen and (max-width:600px) {
+        padding: 10%;
+    }
+}
+
+.brand-container {
+    display: flex;
+    padding: 2% 10%;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    @media only screen and (max-width:600px) {
+        flex-direction: column;
+    }
+}
+
+.brand {
+    margin: 2rem 0;
+
+    @media only screen and (max-width:1024px) {
+        width: 17%;
+    }
+
+    @media only screen and (max-width:600px) {
+        width: 60%;
+        margin: 4rem 0;
+    }
+}
+
+//CTA
+
+.section-cta {
+    text-align: center;
+    margin: 2.5rem 0;
+    padding: 2% 0 10%;
+}
+
+.cta-header {
+    padding: 2% 25%;
+
+    @media only screen and (max-width:1024px) {
+        padding: 2rem 20%;
+    }
+
+    @media only screen and (max-width:600px) {
+        padding: 2rem 12%;
+    }
+}
+
+//Footer
+
+.footer {
+    background-color: #f5f5f5;
+    display: flex;
+    padding: 3% 12%;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    & a:link,
+    a:visited {
+        color: $dark-grayish-blue;
+        text-decoration: none;
+    }
+
+    & a:hover,
+    a:active {
+        color: $strong-cyan;
+    }
+
+    &-nav {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        @media only screen and (max-width:1024px) {
+            width: 60%;
+        }
+
+        @media only screen and (max-width:600px) {
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            text-align: center;
+            margin: 10% 0;
+        }
+    }
+
+    &-link {
+        width: 30%;
+        margin: 1rem 0;
+
+        @media only screen and (max-width:600px) {
+            width: 100%;
+        }
+    }
+
+    &-logo {
+        width: 6rem;
+        height: 6rem;
+
+        & img {
+            width: 100%;
+        }
+
+    }
+
+    .social-link {
+        margin: 0 1rem;
+        font-size: 2rem;
+
+        @media only screen and (max-width:600px) {
+            margin: 0 3rem;
+        }
+    }
+
+    @media only screen and (max-width:600px) {
+        flex-direction: column;
+        padding: 12%;
+    }
+}
