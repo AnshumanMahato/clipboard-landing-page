@@ -185,6 +185,12 @@ h6 {
   grid-template-columns: 1fr 1fr;
   grid-gap: 5rem;
   margin: 5rem 0 10rem;
+
+  @media only screen and (max-width:600px) {
+    grid-template-columns: 1fr;
+    margin: 5rem 0;
+    text-align: center;
+  }
 }
 
 .feature-header {
@@ -194,6 +200,10 @@ h6 {
 
   @media only screen and (max-width:1024px) {
     padding: 2rem 20%;
+  }
+
+  @media only screen and (max-width:600px) {
+    padding: 2rem 10%;
   }
 }
 
@@ -206,6 +216,11 @@ h6 {
 
     @media only screen and (max-width:1200px) {
       width: 100%;
+    }
+
+    @media only screen and (max-width:600px) {
+      left: 0;
+      width: 80%;
     }
   }
 }
@@ -222,6 +237,10 @@ h6 {
   @media only screen and (max-width:800px) {
     padding: 2%;
     padding-right: 15%;
+  }
+
+  @media only screen and (max-width:600px) {
+    padding: 2% 10%;
   }
 }
 
@@ -252,6 +271,10 @@ h6 {
   @media only screen and (max-width:1024px) {
     padding: 2rem 20%;
   }
+
+  @media only screen and (max-width:600px) {
+    padding: 2rem 10%;
+  }
 }
 
 .display-image {
@@ -277,6 +300,10 @@ h6 {
   @media only screen and (max-width:1024px) {
     padding: 2rem 20%;
   }
+
+  @media only screen and (max-width:600px) {
+    padding: 2rem 10%;
+  }
 }
 
 .cards {
@@ -295,6 +322,10 @@ h6 {
     display: inline-block;
     font-size: 4rem;
     padding: 2rem 0 5rem;
+
+    @media only screen and (max-width:600px) {
+      padding: 2rem 0;
+    }
   }
 
   &-title {
@@ -303,6 +334,11 @@ h6 {
 
   &-description {
     font-size: 1.5rem;
+  }
+
+  @media only screen and (max-width:600px) {
+    width: 100%;
+    margin: 3% 0
   }
 }
 
