@@ -23,9 +23,6 @@ body {
   font-size: 1.8rem;
   line-height: 1.7;
   color: #9fabb2; }
-  @media only screen and (max-width: 800px) {
-    body {
-      font-size: 1.5rem; } }
   @media only screen and (max-width: 600px) {
     body {
       line-height: 1.5; } }
@@ -227,8 +224,10 @@ h6 {
   padding: 2% 12%;
   justify-content: space-between;
   align-items: stretch;
-  flex-wrap: wrap;
   width: 100%; }
+  @media only screen and (max-width: 600px) {
+    .cards {
+      flex-direction: column; } }
 
 .card {
   width: 30%; }
@@ -241,8 +240,6 @@ h6 {
         padding: 2rem 0; } }
   .card-title {
     margin-bottom: 1rem; }
-  .card-description {
-    font-size: 1.5rem; }
   @media only screen and (max-width: 600px) {
     .card {
       width: 100%;
@@ -252,17 +249,29 @@ h6 {
   text-align: center;
   margin: 2.5rem 0;
   padding: 5% 0; }
+  @media only screen and (max-width: 600px) {
+    .section-branding {
+      padding: 10%; } }
 
 .brand-container {
   display: flex;
-  padding: 2% 12%;
+  padding: 2% 10%;
   justify-content: space-between;
   align-items: center;
   width: 100%; }
+  @media only screen and (max-width: 600px) {
+    .brand-container {
+      flex-direction: column; } }
 
-@media only screen and (max-width: 1024px) {
-  .brand {
-    width: 17%; } }
+.brand {
+  margin: 2rem 0; }
+  @media only screen and (max-width: 1024px) {
+    .brand {
+      width: 17%; } }
+  @media only screen and (max-width: 600px) {
+    .brand {
+      width: 60%;
+      margin: 4rem 0; } }
 
 .section-cta {
   text-align: center;
@@ -274,6 +283,9 @@ h6 {
   @media only screen and (max-width: 1024px) {
     .cta-header {
       padding: 2rem 20%; } }
+  @media only screen and (max-width: 600px) {
+    .cta-header {
+      padding: 2rem 12%; } }
 
 .footer {
   background-color: #f5f5f5;
@@ -297,12 +309,31 @@ h6 {
     @media only screen and (max-width: 1024px) {
       .footer-nav {
         width: 60%; } }
+    @media only screen and (max-width: 600px) {
+      .footer-nav {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        margin: 10% 0; } }
   .footer-link {
-    width: 30%; }
+    width: 30%;
+    margin: 1rem 0; }
+    @media only screen and (max-width: 600px) {
+      .footer-link {
+        width: 100%; } }
   .footer-logo {
-    width: 5rem;
-    height: 5rem; }
+    width: 6rem;
+    height: 6rem; }
     .footer-logo img {
       width: 100%; }
   .footer .social-link {
-    margin: 0 1rem; }
+    margin: 0 1rem;
+    font-size: 2rem; }
+    @media only screen and (max-width: 600px) {
+      .footer .social-link {
+        margin: 0 3rem; } }
+  @media only screen and (max-width: 600px) {
+    .footer {
+      flex-direction: column;
+      padding: 12%; } }

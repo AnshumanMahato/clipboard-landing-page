@@ -35,10 +35,6 @@ body {
   line-height: 1.7;
   color: $grayish-blue;
 
-  @media only screen and (max-width:800px) {
-    font-size: 1.5rem;
-  }
-
   @media only screen and (max-width:600px) {
     line-height: 1.5;
   }
@@ -311,8 +307,11 @@ h6 {
   padding: 2% 12%;
   justify-content: space-between;
   align-items: stretch;
-  flex-wrap: wrap;
   width: 100%;
+
+  @media only screen and (max-width:600px) {
+    flex-direction: column;
+  }
 }
 
 .card {
@@ -332,10 +331,6 @@ h6 {
     margin-bottom: 1rem;
   }
 
-  &-description {
-    font-size: 1.5rem;
-  }
-
   @media only screen and (max-width:600px) {
     width: 100%;
     margin: 3% 0
@@ -348,19 +343,34 @@ h6 {
   text-align: center;
   margin: 2.5rem 0;
   padding: 5% 0;
+
+  @media only screen and (max-width:600px) {
+    padding: 10%;
+  }
 }
 
 .brand-container {
   display: flex;
-  padding: 2% 12%;
+  padding: 2% 10%;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+
+  @media only screen and (max-width:600px) {
+    flex-direction: column;
+  }
 }
 
 .brand {
+  margin: 2rem 0;
+
   @media only screen and (max-width:1024px) {
     width: 17%;
+  }
+
+  @media only screen and (max-width:600px) {
+    width: 60%;
+    margin: 4rem 0;
   }
 }
 
@@ -377,6 +387,10 @@ h6 {
 
   @media only screen and (max-width:1024px) {
     padding: 2rem 20%;
+  }
+
+  @media only screen and (max-width:600px) {
+    padding: 2rem 12%;
   }
 }
 
@@ -410,15 +424,28 @@ h6 {
     @media only screen and (max-width:1024px) {
       width: 60%;
     }
+
+    @media only screen and (max-width:600px) {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      text-align: center;
+      margin: 10% 0;
+    }
   }
 
   &-link {
     width: 30%;
+    margin: 1rem 0;
+
+    @media only screen and (max-width:600px) {
+      width: 100%;
+    }
   }
 
   &-logo {
-    width: 5rem;
-    height: 5rem;
+    width: 6rem;
+    height: 6rem;
 
     & img {
       width: 100%;
@@ -427,6 +454,16 @@ h6 {
   }
 
   .social-link {
-    margin: 0 1rem
+    margin: 0 1rem;
+    font-size: 2rem;
+
+    @media only screen and (max-width:600px) {
+      margin: 0 3rem;
+    }
+  }
+
+  @media only screen and (max-width:600px) {
+    flex-direction: column;
+    padding: 12%;
   }
 }
