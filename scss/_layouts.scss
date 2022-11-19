@@ -1,4 +1,4 @@
-.section-header {
+.header-text {
     padding: 2% 25%;
 
     @media only screen and (max-width:1024px) {
@@ -63,16 +63,7 @@
 
 .feature-header {
     grid-column: 1/-1;
-    padding: 2rem 25%;
     text-align: center;
-
-    @media only screen and (max-width:1024px) {
-        padding: 2rem 20%;
-    }
-
-    @media only screen and (max-width:600px) {
-        padding: 2rem 10%;
-    }
 }
 
 .feature-image {
@@ -133,16 +124,7 @@
 }
 
 .display-header {
-    padding: 2% 25%;
     margin-bottom: 5rem;
-
-    @media only screen and (max-width:1024px) {
-        padding: 2rem 20%;
-    }
-
-    @media only screen and (max-width:600px) {
-        padding: 2rem 10%;
-    }
 }
 
 .display-image {
@@ -160,18 +142,6 @@
 .section-toolset {
     text-align: center;
     margin: 2.5rem 0;
-}
-
-.toolset-header {
-    padding: 2% 25%;
-
-    @media only screen and (max-width:1024px) {
-        padding: 2rem 20%;
-    }
-
-    @media only screen and (max-width:600px) {
-        padding: 2rem 10%;
-    }
 }
 
 //Branding
@@ -217,18 +187,6 @@
     text-align: center;
     margin: 2.5rem 0;
     padding: 2% 0 10%;
-}
-
-.cta-header {
-    padding: 2% 25%;
-
-    @media only screen and (max-width:1024px) {
-        padding: 2rem 20%;
-    }
-
-    @media only screen and (max-width:600px) {
-        padding: 2rem 12%;
-    }
 }
 
 //Footer
